@@ -1,3 +1,6 @@
 <template>
-  <div>test</div>
+  <div>home</div>
 </template>
+<script>
+export default {};
+</script>

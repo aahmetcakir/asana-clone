@@ -9,7 +9,7 @@
       class="mx-auto mb-12"
     />
 
-    <!-- login with google -->
+    <!-- login with google button -->
     <button
       class="flex items-center rounded-md px-4 py-2 mb-8 mx-auto w-full border hover:bg-secondary transition-all"
     >
@@ -48,7 +48,7 @@
       <div class="mt-8">
         <label for="" class="text-xs">Password</label>
         <input
-          type="passport"
+          type="password"
           class="flex border px-3 py-1.5 w-full rounded-lg mt-2 text-text-weak outline-none outline-none focus:border focus:border-black"
         />
       </div>
