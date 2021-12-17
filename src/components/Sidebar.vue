@@ -1,7 +1,7 @@
 <template>
   <div class="bg-dark w-60 h-screen">
     <div class="pb-6 pt-8 px-6 flex items-center justify-between">
-      <!-- asana logo -->
+      <!-- asana logo test-->
       <logo-light></logo-light>
       <button>
         <Menu></Menu>
