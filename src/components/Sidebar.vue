@@ -1,10 +1,13 @@
 <template>
-  <div class="bg-dark w-60 h-screen">
+  <div
+    class="bg-dark w-60 h-screen transition-all flex-shrink-0"
+    :class="navDrawer ? '-ml-60' : ''"
+  >
     <div class="pb-6 pt-8 px-6 flex items-center justify-between">
       <!-- asana logo test-->
       <logo-light></logo-light>
-      <button>
-        <Menu></Menu>
+      <button @click="drawer()" class="pa-2">
+        <Menu class="text-white"></Menu>
       </button>
     </div>
     <ul class="text-inverse-text text-sm">
@@ -45,21 +48,20 @@ export default {
     CheckCircle,
     Goals,
   },
-  data() {
-    return {
-      menuItems: [
-        { text: "Home", icon: "home", to: "/home" },
-        { text: "My Tasks", icon: "check-circle", to: "/tasks" },
-        { text: "Inbox", icon: "bell" },
-        { text: "Reporting", icon: "Reporting" },
-        { text: "Portfolios", icon: "file" },
-        { text: "Goals", icon: "goals" },
-      ],
-    };
+  computed: {
+    menuItems() {
+      return this.$store.getters.menuItems;
+    },
+    navDrawer() {
+      return this.$store.state.navigationDrawer;
+    },
   },
   methods: {
     isSelected(item) {
       return this.$route.name === item?.text ? "bg-selectedMenu" : "";
+    },
+    drawer() {
+      return this.$store.commit("drawer");
     },
   },
 };

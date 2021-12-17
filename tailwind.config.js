@@ -15,13 +15,16 @@ module.exports = {
         selectedMenuHover: "#ffffff14",
       },
       spacing: {
+        18: "72px",
         110: "440px",
         183: "732px",
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      width: ["focus"],
+    },
   },
   plugins: [],
 };

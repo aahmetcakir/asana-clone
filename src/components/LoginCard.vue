@@ -55,15 +55,17 @@
     </form>
 
     <!-- forgot password -->
-    <router-link to="#" class="text-text-weak text-xs underline block">
+    <router-link to="#" class="text-text-weak text-xs underline block mt-1">
       Forgot your password?
     </router-link>
     <!-- login button -->
-    <button
-      class="bg-purple mt-8 rounded-md w-full text-white px-3 py-1.5 text-sm hover:bg-dark-purple transition-all"
-    >
-      Log in
-    </button>
+    <router-link to="/home">
+      <button
+        class="bg-purple mt-8 rounded-md w-full text-white px-3 py-1.5 text-sm hover:bg-dark-purple transition-all"
+      >
+        Log in
+      </button>
+    </router-link>
     <span class="text-text-weak text-sm mt-6 block text-center">
       Don't have an account?
       <a href="#" class="text-link ml-2">Sign up</a>
