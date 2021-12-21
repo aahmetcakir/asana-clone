@@ -13,7 +13,8 @@
     <button
       class="flex items-center rounded-md px-4 py-2 mb-8 mx-auto w-full border hover:bg-secondary transition-all"
     >
-      <google class="ml-4" />
+      <icon name="google" class="ml-4"></icon>
+
       <span class="mx-auto"> Log in with Google </span>
     </button>
 
@@ -79,11 +80,10 @@
   </div>
 </template>
 <script>
-import Google from "@/components/icons/Google";
-
+import Icon from "@/components/Icon";
 export default {
   components: {
-    Google,
+    Icon,
   },
 };
 </script>

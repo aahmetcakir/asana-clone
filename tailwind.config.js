@@ -15,6 +15,7 @@ module.exports = {
         selectedMenuHover: "#ffffff14",
         buttonCreation: "#f06a6a",
         upSell: "#E8B668",
+        borderStrong: "#cfcbcb",
       },
       spacing: {
         18: "72px",
