@@ -3,7 +3,7 @@
     <div class="flex">
       <sidebar v-if="routeName !== 'Login'"></sidebar>
       <div class="w-full">
-        <app-bar></app-bar>
+        <app-bar v-if="routeName !== 'Login'"></app-bar>
         <router-view />
       </div>
     </div>

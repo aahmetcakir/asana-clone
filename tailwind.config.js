@@ -13,6 +13,8 @@ module.exports = {
         "inverse-text": "#f5f4f3",
         selectedMenu: "#ffffff29",
         selectedMenuHover: "#ffffff14",
+        buttonCreation: "#f06a6a",
+        upSell: "#E8B668",
       },
       spacing: {
         18: "72px",
