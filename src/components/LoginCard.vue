@@ -63,6 +63,7 @@
     <router-link to="/home">
       <button
         class="bg-purple mt-8 rounded-md w-full text-white px-3 py-1.5 text-sm hover:bg-dark-purple transition-all"
+        @click="submit"
       >
         Log in
       </button>
@@ -84,6 +85,12 @@ import Icon from "@/components/Icon";
 export default {
   components: {
     Icon,
+  },
+  methods: {
+    submit() {
+      const userColor = this.randomColor();
+      return this.$store.commit("userColor", { userColor });
+    },
   },
 };
 </script>

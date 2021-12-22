@@ -1,6 +1,15 @@
 <template>
-  <div>home</div>
+  <div>
+    <project-card></project-card>
+  </div>
 </template>
 <script>
-export default {};
+import ProjectCard from "@/components/ProjectCard";
+export default {
+  components: {
+    ProjectCard,
+  },
+};
 </script>
+
+ProjectCard

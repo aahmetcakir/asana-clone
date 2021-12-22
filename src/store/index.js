@@ -14,6 +14,7 @@ export default new Vuex.Store({
       { text: "Goals", icon: "goals", to: "/goals" },
     ],
     navigationDrawer: false,
+    userBackgroundColor: undefined,
   },
   getters: {
     menuItems(state) {
@@ -23,6 +24,9 @@ export default new Vuex.Store({
   mutations: {
     drawer(state) {
       return (state.navigationDrawer = !state.navigationDrawer);
+    },
+    userColor(state, userColor) {
+      return (state.userBackgroundColor = userColor);
     },
   },
   actions: {},

@@ -31,38 +31,25 @@
           <button class="bg-upSell font-light rounded-md ml-3 px-3 text-sm h-9">
             Upgrade
           </button>
-          <button
-            class="rounded-full flex items-center justify-center ml-3 p-1.5 h-7 text-xs text-gray-900"
-            :style="{ backgroundColor: userBackgroundColor }"
-          >
-            <!--TODO username will come to this section -->
-            AÇ
-          </button>
+          <avatar></avatar>
         </div>
       </div>
     </div>
-    <hr />
   </div>
 </template>
 <script>
 import Icon from "@/components/Icon";
+import Avatar from "@/components/Avatar";
 
 export default {
   components: {
     Icon,
-  },
-  data() {
-    return {
-      userBackgroundColor: undefined,
-    };
+    Avatar,
   },
   computed: {
     navDrawer() {
       return this.$store.state.navigationDrawer;
     },
-  },
-  mounted() {
-    this.userBackgroundColor = this.randomColor();
   },
   methods: {
     drawer() {
