@@ -20,9 +20,8 @@
           class="flex items-center py-1.5 px-6 hover:bg-selectedMenuHover"
           :class="isSelected(item)"
         >
-          <icon :name="item.icon"></icon>
+          <icon :name="item.icon" class="mr-2"></icon>
 
-          <component :is="item.icon" class="mr-2"></component>
           {{ item.text }}
         </li>
       </router-link>
