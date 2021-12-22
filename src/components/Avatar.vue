@@ -8,7 +8,7 @@
     }"
   >
     <!--TODO username will come to this section -->
-    <span class="flex items-baseline justify-center"> AÇ </span>
+    AÇ
   </button>
 </template>
 <script>
