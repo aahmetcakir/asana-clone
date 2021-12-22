@@ -9,11 +9,12 @@ export default new Vuex.Store({
       { text: "Home", icon: "home", to: "/home" },
       { text: "My Tasks", icon: "check-circle", to: "/tasks" },
       { text: "Inbox", icon: "bell", to: "/inbox" },
-      { text: "Reporting", icon: "Reporting", to: "/reporting" },
+      { text: "Reporting", icon: "reporting", to: "/reporting" },
       { text: "Portfolios", icon: "file", to: "/portfolios" },
       { text: "Goals", icon: "goals", to: "/goals" },
     ],
     navigationDrawer: false,
+    userBackgroundColor: undefined,
   },
   getters: {
     menuItems(state) {
@@ -23,6 +24,9 @@ export default new Vuex.Store({
   mutations: {
     drawer(state) {
       return (state.navigationDrawer = !state.navigationDrawer);
+    },
+    userColor(state, userColor) {
+      return (state.userBackgroundColor = userColor);
     },
   },
   actions: {},

@@ -15,17 +15,35 @@ module.exports = {
         selectedMenuHover: "#ffffff14",
         buttonCreation: "#f06a6a",
         upSell: "#E8B668",
+        borderStrong: "#cfcbcb",
+        projectCardHover: "#F8F7F7",
+        "inverse-background-hover": "rgba(255, 255, 255, 0.06)",
       },
       spacing: {
         18: "72px",
         110: "440px",
         183: "732px",
       },
+      borderRadius: {
+        "2.5xl": "20px",
+        "4xl": "30px",
+      },
+      fontFamily: {
+        sans: [
+          '"apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue","Helvetica","Arial","sans-serif"',
+        ],
+      },
+      transitionProperty: {
+        display: "flex, inline, hidden, block, inline-block",
+        spacing: "margin, padding",
+      },
     },
   },
   variants: {
     extend: {
       width: ["focus"],
+      display: ["group-hover", "hover"],
+      margin: ["group-hover", "hover"],
     },
   },
   plugins: [],

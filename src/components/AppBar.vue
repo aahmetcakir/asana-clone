@@ -2,54 +2,49 @@
   <div>
     <div class="h-18 flex items-center justify-between mx-4">
       <div class="flex items-center">
+        <!-- nav drawer button -->
         <button v-if="navDrawer" @click="drawer()" class="pa-2">
-          <Menu class="text-black transform rotate-180"></Menu>
+          <icon name="menu" class="text-black transform rotate-180"></icon>
         </button>
+        <!-- page name  -->
         <span class="text-xl text-black ml-2">
           {{ $route.name }}
         </span>
       </div>
       <div class="flex items-center">
+        <!-- search section -->
         <form class="relative">
           <input
             type="text"
             placeholder="Search"
-            class="rounded-2xl h-8 outline-none pr-4 pl-8 border transition-all border-gray-400 w-36 focus:w-110 text-sm"
+            class="rounded-2xl h-8 outline-none pr-4 pl-8 border transition-all border-borderStrong w-36 focus:w-110 text-sm"
           />
-          <search class="absolute top-2 left-2"></search>
+          <icon name="search" class="absolute top-2 left-2"></icon>
         </form>
-        <div class="flex space-x-3 items-center">
+        <!-- button group -->
+        <div class="flex space-x-3 items-center mr-2">
           <button
             class="bg-buttonCreation rounded-full flex items-center justify-center ml-3 p-1.5 h-7"
           >
-            <Plus class="text-white"></Plus>
+            <icon name="plus" class="text-white"></icon>
           </button>
           <button class="bg-upSell font-light rounded-md ml-3 px-3 text-sm h-9">
             Upgrade
           </button>
-          <!-- bg-green-400 -->
-          <button
-            class="rounded-full flex items-center justify-center ml-3 p-1.5 h-7 text-xs text-gray-900"
-            :style="{ backgroundColor: randomColor() }"
-          >
-            AÇ
-          </button>
+          <avatar></avatar>
         </div>
       </div>
     </div>
-    <hr />
   </div>
 </template>
 <script>
-import Menu from "@/components/icons/Menu";
-import Search from "@/components/icons/Search";
-import Plus from "@/components/icons/Plus";
+import Icon from "@/components/Icon";
+import Avatar from "@/components/Avatar";
 
 export default {
   components: {
-    Menu,
-    Search,
-    Plus,
+    Icon,
+    Avatar,
   },
   computed: {
     navDrawer() {
