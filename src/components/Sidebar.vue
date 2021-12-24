@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-dark w-60 h-screen transition-all flex-shrink-0"
+    class="bg-dark w-60 h-screen transition-all duration-500 flex-shrink-0"
     :class="navDrawer ? '-ml-60' : ''"
   >
     <div class="pb-6 pt-8 px-6 flex items-center justify-between">
@@ -10,6 +10,7 @@
         <icon name="menu" class="text-white"></icon>
       </button>
     </div>
+
     <ul class="text-inverse-text text-sm">
       <router-link
         v-for="item in menuItems"

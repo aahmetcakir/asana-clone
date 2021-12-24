@@ -21,6 +21,7 @@
           />
           <icon name="search" class="absolute top-2 left-2"></icon>
         </form>
+
         <!-- button group -->
         <div class="flex space-x-3 items-center mr-2">
           <button
