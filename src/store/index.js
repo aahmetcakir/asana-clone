@@ -23,7 +23,7 @@ export default new Vuex.Store({
   },
   mutations: {
     drawer(state) {
-      return (state.navigationDrawer = !state.navigationDrawer);
+      state.navigationDrawer = !state.navigationDrawer;
     },
     userColor(state, userColor) {
       return (state.userBackgroundColor = userColor);

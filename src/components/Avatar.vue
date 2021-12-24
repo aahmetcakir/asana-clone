@@ -24,9 +24,6 @@ export default {
     userBackgroundColor() {
       return this.$store.state.userBackgroundColor?.userColor;
     },
-    sizes() {
-      return `maxWidth: ${this.size / 4}px; maxHeight: ${this.size / 4}px;`;
-    },
   },
 };
 </script>
