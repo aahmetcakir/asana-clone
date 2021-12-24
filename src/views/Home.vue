@@ -1,5 +1,5 @@
 <template>
-  <div class="grid place-content-center mt-8">
+  <div class="grid place-content-center mt-8 gap-y-4">
     <section class="w-210">
       <div class="text-dark flex items-center border-b-2 pb-2.5 mb-4">
         <button
@@ -31,11 +31,11 @@
           ></icon>
         </button>
         <span @click="subSectionDrawer(1)" class="cursor-pointer"
-          >Task Due Soon</span
+          >Favorites</span
         >
       </div>
       <div class="space-x-2" :class="subSectionDraw[1] ? '' : 'hidden'">
-        <project-card v-for="i in 5" :key="i"></project-card>
+        <project-card v-for="i in 4" :key="i"></project-card>
       </div>
     </section>
     <section class="w-210">
@@ -50,7 +50,7 @@
           ></icon>
         </button>
         <span @click="subSectionDrawer(2)" class="cursor-pointer"
-          >Task Due Soon</span
+          >Recent Projects</span
         >
       </div>
       <div class="space-x-2" :class="subSectionDraw[2] ? '' : 'hidden'">
@@ -69,12 +69,12 @@ export default {
   },
   data() {
     return {
-      subSectionDraw: [true, false, false],
+      subSectionDraw: [false, true, true],
     };
   },
   methods: {
-    subSectionDrawer(n) {
-      this.$set(this.subSectionDraw, n, !this.subSectionDraw[n]);
+    subSectionDrawer(index) {
+      this.$set(this.subSectionDraw, index, !this.subSectionDraw[index]);
     },
   },
 };
