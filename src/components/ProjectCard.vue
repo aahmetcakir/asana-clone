@@ -4,7 +4,7 @@
       class="h-60 rounded-4xl p-4 group-hover:bg-projectCardHover transition-all duration-400"
     >
       <div
-        class="w-32 h-32 rounded-2.5xl flex flex-col items-center justify-center"
+        class="w-30 h-30 rounded-2.5xl flex flex-col items-center justify-center"
         :style="{ backgroundColor: projectBackgroundColor }"
       >
         <div
