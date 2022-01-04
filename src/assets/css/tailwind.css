@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.h-content {
+  height: calc(100vh - theme(spacing.18));
+}

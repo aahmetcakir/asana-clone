@@ -18,16 +18,6 @@ export default {
     Sidebar,
     AppBar,
   },
-  data() {
-    return {
-      windowWidth: window.innerWidth,
-    };
-  },
-  watch: {
-    "window.innerWidth"() {
-      console.log(window.innerWidth);
-    },
-  },
   computed: {
     routeName() {
       return this.$route.name;

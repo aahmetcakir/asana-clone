@@ -1,14 +1,14 @@
 <template>
-  <router-link to="#" class="group inline-block">
+  <router-link to="/project/238476" class="group inline-block">
     <div
-      class="h-60 rounded-4xl p-4 group-hover:bg-projectCardHover transition-all duration-400"
+      class="h-60 rounded-4xl p-4 group-hover:bg-projectCardHover transition-all duration-500"
     >
       <div
         class="w-30 h-30 rounded-2.5xl flex flex-col items-center justify-center"
         :style="{ backgroundColor: projectBackgroundColor }"
       >
         <div
-          class="opacity-0 group-hover:opacity-100 transition-all duration-200 -mb-2"
+          class="opacity-0 group-hover:opacity-100 transition-all duration-2-400 -mb-2"
         >
           <button
             @click="setFavorite()"
@@ -42,7 +42,7 @@
 
         <avatar
           size="24"
-          class="opacity-0 mt-2 -mb-4 group-hover:opacity-100 group-hover:mb-0 group-hover:translate transition-all duration-200"
+          class="opacity-0 mt-2 -mb-4 group-hover:opacity-100 group-hover:mb-0 group-hover:translate transition-all duration-400"
         ></avatar>
       </div>
       <div class="text-sm font-medium text-center mt-2">Messega</div>
