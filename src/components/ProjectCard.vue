@@ -17,7 +17,7 @@
             <icon
               name="filled-star"
               class="text-white"
-              :class="isFavorite ? 'hidden' : 'block'"
+              :class="isFavorite ? 'block' : 'hidden'"
             ></icon>
           </button>
 
@@ -28,7 +28,7 @@
             <icon
               name="star"
               class="text-white"
-              :class="isFavorite ? 'block' : 'hidden'"
+              :class="isFavorite ? 'hidden' : 'block'"
             ></icon>
           </button>
           <button
@@ -57,7 +57,7 @@ export default {
   components: { Icon, Avatar },
   data() {
     return {
-      projectBackgroundColor: undefined,
+      projectBackgroundColor: "#B36BD4",
       isFavorite: false,
     };
   },
